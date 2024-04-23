@@ -4,17 +4,7 @@
 
 .card {
     flex: 1;
-    background-color: #CCF5FF;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 20px;
-    height: 600px;
-    justify-content: center;
-}
-.card1 {
-    flex: 1;
-    background-color: #CCF5FF;
+    background-color: #ccf5ff;
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -23,19 +13,59 @@
     justify-content: center;
 }
 
-.box {
+.card h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.card p {
+    text-align: center;
+    font-size: 22px;
+}
+
+.card-inner {
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    margin-top: 10px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    justify-content: center;
+}
+
+.table-container {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+
+.table-head {
+    width: 100%;
+    border-collapse: collapse;
+    border-bottom: 3px solid #fff;
+}
+
+td {
+    padding: 10px;
+    background-color: #e9e9e9;
+
+    margin: 3px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
 }
 
 .box h3,
 .box p {
-    margin-top: 10px; /* Atur margin atas pada judul dan isi kotak */
+    margin-top: 10px;
 }
-.icon1  {
+
+.icon1 {
     display: flex;
     width: 10%;
     height: 10%;
@@ -44,7 +74,7 @@
     position: center;
     justify-items: center;
 }
-.icon2{
+.icon2 {
     display: flex;
     width: 45%;
     height: 10%;
@@ -53,4 +83,108 @@
     position: center;
     justify-items: center;
     align-items: center;
+}
+
+.btn-unduh {
+    background-color: #347acf;
+    border: none;
+    padding: 10px 10px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.input1 {
+    width: 400px;
+    border: 1px solid #ccc; /* Border */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Shadow */
+    height: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+.input2 {
+    width: 400px;
+    border: 1px solid #ccc; /* Border */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Shadow */
+    height: 20px;
+    padding: 10px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+.login {
+    display: flex;
+    font-family: Arial, sans-serif;
+    align-items: center;
+    font-weight: bold;
+    justify-content: center;
+
+    font-size: 30px;
+}
+.btn-login {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+button {
+    font-family: Arial, sans-serif; /* Mengatur jenis font */
+    font-size: 16px; /* Mengatur ukuran font */
+    font-weight: bold; /* Mengatur ketebalan font */
+    color: #000; /* Mengatur warna teks */
+    background-color: #ccf5ff; /* Mengatur warna latar belakang */
+    border: none; /* Menghilangkan border */
+    padding: 10px 20px; /* Mengatur padding */
+    border-radius: 20px; /* Mengatur sudut melengkung */
+    cursor: pointer; /* Mengubah kursor saat diarahkan */
+    margin-right: 10px;
+}
+a {
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-weight: 100px;
+    color: #007cea;
+}
+
+.card1 {
+    flex: 1;
+    background-color: #ccf5ff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 {
+    display: flex;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    margin-top: 35px;
+    margin-right: 60px;
+    margin-left: 60px;
+    height: 400px;
+    padding-right: 20px;
+    padding-left: 20px;
+    justify-content: center;
+}
+
+.box h3,
+.box p {
+    margin-top: 10px;
 }
