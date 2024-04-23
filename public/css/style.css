@@ -1,41 +1,39 @@
-body {
+.card-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
 }
 
 .card {
-    width: 500px;
-    background-color: #fff;
-    border-radius: 8px;
+    flex: 1;
+    background-color: #CCF5FF;
+    border-radius: 12px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin: 20px;
-    text-align: center;
     height: 600px;
-    display: flex;
-}
-.card1 {
-    width: 500px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 20px;
-    text-align: center;
-    height: 600px;
-    display: flex;
     justify-content: center;
 }
-.card h2 {
-    color: #333;
+.card1 {
+    flex: 1;
+    background-color: #CCF5FF;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    height: 600px;
+    justify-content: center;
 }
 
-.card p {
-    color: #666;
+.box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.box h3,
+.box p {
+    margin-top: 10px; /* Atur margin atas pada judul dan isi kotak */
 }
 .icon1  {
     display: flex;
