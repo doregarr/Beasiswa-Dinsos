@@ -16,12 +16,43 @@ body {
     margin: 20px;
     text-align: center;
     height: 600px;
+    display: flex;
 }
-
+.card1 {
+    width: 500px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
 .card h2 {
     color: #333;
 }
 
 .card p {
     color: #666;
+}
+.icon1  {
+    display: flex;
+    width: 10%;
+    height: 10%;
+    padding: 18px;
+    align-items: center;
+    position: center;
+    justify-items: center;
+}
+.icon2{
+    display: flex;
+    width: 45%;
+    height: 10%;
+    padding: 18px;
+    align-items: center;
+    position: center;
+    justify-items: center;
+    align-items: center;
 }

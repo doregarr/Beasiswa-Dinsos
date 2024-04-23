@@ -11,10 +11,10 @@
         <h2>Card 1</h2>
         <p>This is the content of card 1.</p>
     </div>
-    <div class="card">
-<span>
-        <img src="{{ asset('image/logo-pemko.jpeg') }}"></span>
-        <span><img src="{{ asset('image/kolaborasi-medan-berkah.png') }}"></span>
+    <div class="card1">
+
+        <img src="{{ asset('image/logo-pemko.jpeg') }}" class="icon1">
+       <img src="{{ asset('image/kolaborasi-medan-berkah.png') }}" class="icon2">
     </div>
 </body>
 </html>
