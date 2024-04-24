@@ -170,3 +170,74 @@ a {
         align-items: center;
     }
 }
+
+
+/* Registrasi*/
+
+.box {
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    padding: 0 35px 40px;
+    width: 50%;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registrasi {
+    display: flex;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    justify-content: center;
+    font-size: 30px;
+}
+.input-nik, .input-password, .input-nama, .input-email  {
+    width: 100%;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    height: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.btn-registrasi {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+button {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold; 
+    color: #000;
+    background-color: #ccf5ff; 
+    border: none; 
+    padding: 10px 20px;
+    border-radius: 20px; 
+    cursor: pointer;
+    margin-right: 10px;
+}
+a {
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-weight: 100px;
+    color: #007cea;
+}
+
+@media screen and (max-width: 768px) {
+    .title-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

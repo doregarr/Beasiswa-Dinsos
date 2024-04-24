@@ -7,3 +7,7 @@ Route::get('/', function () {
 Route::get('/registrasi', function () {
     return view('registrasi');
 });
+use App\Http\Controllers\DownloadController;
+
+Route::get('/download/{filename}', [DownloadController::class, 'download'])->name('download');
+
