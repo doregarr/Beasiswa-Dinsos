@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Two Cards</title>
+    <title>Registrasi</title>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 
@@ -31,29 +32,29 @@
                         </tr>
                         <tr class="table-head">
                             <td>SYARAT DAN KETENTUAN PENERIMA BANTUAN BEASISWA PENDIDIKAN</td>
-                            <td><a href="{{ route('download', ['filename' => 'Syarat dan Ketentuan Penerima Bantuan Biaya Pendidikan.pdf']) }}"
+                            <td><a href="{{ route('download', ['filename' => 'Pengumuman Bantuan Biaya Pendidikan Gelombang 2.pdf']) }}"
                                     class="btn-unduh">Unduh</a></td>
                         </tr>
                         <tr class="table-head">
                             <td>DATA MAHASISWA CALON PENERIMA BANTUAN BIAYA PENDIDIKAN</td>
-                            <td><a href="{{ route('download', ['filename' => 'Biodata Mahasiswa.pdf']) }}"
+                            <td><a href="{{ route('download', ['filename' => 'Pengumuman Bantuan Biaya Pendidikan Gelombang 2.pdf']) }}"
                                     class="btn-unduh">Unduh</a></td>
                         </tr>
                         <tr class="table-head">
                             <td>TEMPLATE SURAT PERMOHONAN DITUJUKAN KEPADA BAPAK WALI KOTA MEDAN Cq. KEPALA DINAS SOSIAL
                                 KOTA MEDAN</td>
-                            <td><a href="{{ route('download', ['filename' => 'Template Surat Permohonan Ditujukan Kepada Walikota Medan dan Kepala Dinsos.pdf']) }}"
+                            <td><a href="{{ route('download', ['filename' => 'Pengumuman Bantuan Biaya Pendidikan Gelombang 2.pdf']) }}"
                                     class="btn-unduh">Unduh</a></td>
                         </tr>
                         <tr class="table-head">
                             <td>TEMPLATE SURAT PERNYATAAN TIDAK MENERIMA BEASISWA/BANTUAN BIAYA PENDIDIKAN DARI SUMBER
                                 LAIN</td>
-                            <td><a href="{{ route('download', ['filename' => 'Surat Pernyataan Tidak Menerima Beasiswa Sumber Lain.pdf']) }}"
+                            <td><a href="{{ route('download', ['filename' => 'Pengumuman Bantuan Biaya Pendidikan Gelombang 2.pdf']) }}"
                                     class="btn-unduh">Unduh</a></td>
                         </tr>
                         <tr class="table-head">
                             <td>TEMPLATE SURAT PERNYATAAN TIDAK BERSTATUS SEBAGAI APARATUR SIPIL NEGARA(ASN)</td>
-                            <td><a href="{{ route('download', ['filename' => 'Surat Pernyataan Tidak Berstatus Sebagai ASN.pdf']) }}"
+                            <td><a href="{{ route('download', ['filename' => 'Pengumuman Bantuan Biaya Pendidikan Gelombang 2.pdf']) }}"
                                     class="btn-unduh">Unduh</a></td>
                         </tr>
                     </tbody>
@@ -63,19 +64,20 @@
         <div class="card">
             <div class="box">
                 <div class="input-container">
-                    <h3 class="login">Login</h3>
+                    <h3 class="registrasi">Registrasi</h3>
                     <input type="text" placeholder="Masukkan Nomor Induk Kependudukan" class="input-nik">
+                    <input type="text" placeholder="Masukkan Nama Anda" class="input-nama">
+                    <input type="text" placeholder="Masukkan Nomor Email" class="input-email">
                     <input type="password" placeholder="Masukkan Password" class="input-password">
                 </div>
-                <div class="btn-login">
-                    <button type="submit"> Login</button>
-                    <a href>Daftar Akun</a>
+                <div class="btn-registrasi">
+                    <button type="submit"> Registrasi </button>
+                    <a href ="/">Login</a>
                 </div>
             </div>
         </div>
     </div>
-</div>
+    </div>
 </body>
 
 </html>
-
