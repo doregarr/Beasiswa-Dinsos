@@ -1,26 +1,63 @@
-.card-container {
-    display: flex;
+body {
+    background-color: #ccf5ff;
 }
 
-.card {
-    flex: 1;
-    background-color: #ccf5ff;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 20px;
-    height: 600px;
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.title-container{
+    display: flex;
+    padding: 20px 20px 0;
+    margin: 20px 20px 0;
     justify-content: center;
 }
 
-.card h2 {
-    text-align: center;
-    font-size: 30px;
+.title-container .box-title {
+    flex: 1;
+    flex-direction: column;
 }
 
-.card p {
+.title-container .box-title h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.title-container .box-title p {
     text-align: center;
     font-size: 22px;
+}
+
+.title-container .box-image {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.title-container .box-image .icon1 {
+    width: 10%;
+    height: auto;
+    margin-right: 30px;
+    
+}
+
+.title-container .box-image .icon2 {
+    width: 45%;
+    height:auto;
+}
+
+/* Unduh */
+
+.card {
+    flex: 1;
+    padding: 20px;
+    margin: 20px;
+    justify-content: center;
 }
 
 .card-inner {
@@ -33,56 +70,24 @@
 }
 
 .table-container {
-    border-radius: 10px;
+    border-radius: 15px;
     overflow: hidden;
 }
 
 table {
-    border-collapse: collapse;
-    border-radius: 10px;
+    border-collapse: separate;
+    border-spacing: 0 5px; 
 }
 
 .table-head {
     width: 100%;
-    border-collapse: collapse;
-    border-bottom: 3px solid #fff;
 }
 
 td {
-    padding: 10px;
-    background-color: #e9e9e9;
-
+    padding: 15px;
+    background-color: 
+    #B5DDDC;
     margin: 3px;
-}
-
-.box {
-    display: flex;
-    justify-content: center;
-}
-
-.box h3,
-.box p {
-    margin-top: 10px;
-}
-
-.icon1 {
-    display: flex;
-    width: 10%;
-    height: 10%;
-    padding: 18px;
-    align-items: center;
-    position: center;
-    justify-items: center;
-}
-.icon2 {
-    display: flex;
-    width: 45%;
-    height: 10%;
-    padding: 18px;
-    align-items: center;
-    position: center;
-    justify-items: center;
-    align-items: center;
 }
 
 .btn-unduh {
@@ -96,51 +101,59 @@ td {
     text-decoration: none;
 }
 
-.input1 {
-    width: 400px;
-    border: 1px solid #ccc; /* Border */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Shadow */
+/* Login */
+
+.box {
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    padding: 0 35px 40px;
+    width: 50%;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login {
+    display: flex;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    justify-content: center;
+    font-size: 30px;
+}
+.input-nik, .input-password  {
+    width: 100%;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     height: 20px;
     padding: 10px;
     margin-bottom: 20px;
     margin-top: 10px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
-.input2 {
-    width: 400px;
-    border: 1px solid #ccc; /* Border */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Shadow */
-    height: 20px;
-    padding: 10px;
-    margin-bottom: 40px;
-    margin-top: 10px;
-    border-radius: 20px;
-}
-.login {
-    display: flex;
-    font-family: Arial, sans-serif;
-    align-items: center;
-    font-weight: bold;
-    justify-content: center;
 
-    font-size: 30px;
-}
 .btn-login {
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: end;
 }
 
 button {
-    font-family: Arial, sans-serif; /* Mengatur jenis font */
-    font-size: 16px; /* Mengatur ukuran font */
-    font-weight: bold; /* Mengatur ketebalan font */
-    color: #000; /* Mengatur warna teks */
-    background-color: #ccf5ff; /* Mengatur warna latar belakang */
-    border: none; /* Menghilangkan border */
-    padding: 10px 20px; /* Mengatur padding */
-    border-radius: 20px; /* Mengatur sudut melengkung */
-    cursor: pointer; /* Mengubah kursor saat diarahkan */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold; 
+    color: #000;
+    background-color: #ccf5ff; 
+    border: none; 
+    padding: 10px 20px;
+    border-radius: 20px; 
+    cursor: pointer;
     margin-right: 10px;
 }
 a {
@@ -151,40 +164,10 @@ a {
     color: #007cea;
 }
 
-.card1 {
-    flex: 1;
-    background-color: #ccf5ff;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 20px;
-    height: 600px;
-    justify-content: center;
-    align-items: center;
+@media screen and (max-width: 768px) {
+    .title-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
-.box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.box1 {
-    display: flex;
-    background-color: #fff;
-    border-radius: 20px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    padding: 5px;
-    margin-top: 35px;
-    margin-right: 60px;
-    margin-left: 60px;
-    height: 400px;
-    padding-right: 20px;
-    padding-left: 20px;
-    justify-content: center;
-}
-
-.box h3,
-.box p {
-    margin-top: 10px;
-}
