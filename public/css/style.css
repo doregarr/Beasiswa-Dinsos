@@ -1,77 +1,63 @@
-body {
-    background-color: #ccf5ff;
+body{
+    min-height: 95vh;
+    margin: 0;
 }
 
 .card-container {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
 }
 
-.title-container{
-    display: flex;
-    padding: 20px 20px 0;
-    margin: 20px 20px 0;
-    justify-content: center;
-}
-
-.title-container .box-title {
+.card-container .card {
     flex: 1;
+    padding: 20px;
+}
+.card-container .card1{
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: #ccf5ff; 
+}
+
+.card-container .card .box-title {
+    display: flex;
+    justify-content: start;
+    align-items: start;
     flex-direction: column;
 }
 
-.title-container .box-title h2 {
-    text-align: center;
-    font-size: 30px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.card-container .card .box-title h2 {
+    font-size: 1.8rem;
+    font-family: Poppins, sans-serif;
+    line-height: 0.2rem;
 }
 
-.title-container .box-title p {
+.card-container .card .box-title p {
+    font-family: Poppins, sans-serif;
     text-align: center;
-    font-size: 22px;
+    font-size: 1.4rem;
+    line-height: 0.2rem;
 }
 
-.title-container .box-image {
+.card1 .box-image {
     display: flex;
     flex: 1;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
    
 }
 
-.title-container .box-image .icon1 {
+.card1 .box-image .icon1 {
     width: 10%;
     height: auto;
-    margin-right: 30px;
-    
+    margin-right: 0.5rem;
 }
 
-.title-container .box-image .icon2 {
-    width: 45%;
+.card1 .box-image .icon2 {
+    width: 30%;
     height:auto;
-}
-
-/* Unduh */
-
-.card {
-    flex: 1;
-    padding: 20px;
-    margin: 20px;
-    justify-content: center;
-}
-
-.card-inner {
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 20px;
-    justify-content: center;
-}
-
-.table-container {
-    border-radius: 15px;
-    overflow: hidden;
 }
 
 table {
@@ -79,23 +65,31 @@ table {
     border-spacing: 0 5px; 
 }
 
-.table-head {
-    width: 100%;
+.table-container{
+    margin-top: 1.5rem;
 }
 
-td {
-    padding: 15px;
-    background-color: 
-    #B5DDDC;
+.table-head {
+    width: 100%;
+    
+}
+
+.table-font {
+    border-radius: 20px;
+    padding: 12px;
     margin: 3px;
+    font-family: Poppins;
+    font-weight: 400;
+    border: 2px solid #007cea;
+    
 }
 
 .btn-unduh {
-    background-color: #347acf;
     border: none;
+    margin-left: 1rem;
     padding: 10px 10px;
     font-size: 15px;
-    color: white;
+    color: #007cea;
     cursor: pointer;
     border-radius: 5px;
     text-decoration: none;
@@ -104,13 +98,15 @@ td {
 /* Login */
 
 .box {
+    display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
-    padding: 0 35px 40px;
+    margin: 5.5rem auto;
+    padding: 0 35px 20px;
     width: 50%;
 }
 
@@ -118,6 +114,7 @@ td {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .login {
@@ -127,6 +124,20 @@ td {
     justify-content: center;
     font-size: 30px;
 }
+
+.input-wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.placeholder-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    padding-bottom: 5px;
+}
+
 .input-nik, .input-password  {
     width: 100%;
     border: 1px solid #ccc;
@@ -165,9 +176,36 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-    .title-container {
+    .card-container{
         flex-direction: column;
         align-items: center;
+    }
+    .title-container{
+        flex-direction: column;
+    }
+    .box{
+        margin: 1.5rem auto;
+    }
+    .card-container .card .box-title h2{
+        font-size: 1.5rem;
+        line-height: 1.3rem;
+    }
+    .card-container .card .box-title p{
+        font-size: 1.2rem;
+        line-height: 1.3rem;
+        margin-top: -0.5rem;
+    }
+    .title-container .box-image{
+        margin-top: -0.5rem;
+    }
+    .card1 .box-image .icon1 {
+        width: 8%;
+    }
+    .card .box-image .icon2 {
+        width: 25%;
+    }
+    .table-container{
+        margin-top: 0.3rem;
     }
 }
 
