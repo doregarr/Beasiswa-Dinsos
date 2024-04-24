@@ -33,29 +33,29 @@
                         </tr>
                         <tr class="table-head">
                             <td>SYARAT DAN KETENTUAN PENERIMA BANTUAN BEASISWA PENDIDIKAN</td>
-                            <td><a href="{{ route('download', ['filename' => 'Pengumuman Bantuan Biaya Pendidikan Gelombang 2.pdf']) }}"
+                            <td><a href="{{ route('download', ['filename' => 'Syarat dan Ketentuan Penerima Bantuan Biaya Pendidikan.pdf']) }}"
                                     class="btn-unduh">Unduh</a></td>
                         </tr>
                         <tr class="table-head">
                             <td>DATA MAHASISWA CALON PENERIMA BANTUAN BIAYA PENDIDIKAN</td>
-                            <td><a href="{{ route('download', ['filename' => 'Pengumuman Bantuan Biaya Pendidikan Gelombang 2.pdf']) }}"
+                            <td><a href="{{ route('download', ['filename' => 'Biodata Mahasiswa.pdf']) }}"
                                     class="btn-unduh">Unduh</a></td>
                         </tr>
                         <tr class="table-head">
                             <td>TEMPLATE SURAT PERMOHONAN DITUJUKAN KEPADA BAPAK WALI KOTA MEDAN Cq. KEPALA DINAS SOSIAL
                                 KOTA MEDAN</td>
-                            <td><a href="{{ route('download', ['filename' => 'Pengumuman Bantuan Biaya Pendidikan Gelombang 2.pdf']) }}"
+                            <td><a href="{{ route('download', ['filename' => 'Template Surat Permohonan Ditujukan Kepada Walikota Medan dan Kepala Dinsos.pdf']) }}"
                                     class="btn-unduh">Unduh</a></td>
                         </tr>
                         <tr class="table-head">
                             <td>TEMPLATE SURAT PERNYATAAN TIDAK MENERIMA BEASISWA/BANTUAN BIAYA PENDIDIKAN DARI SUMBER
                                 LAIN</td>
-                            <td><a href="{{ route('download', ['filename' => 'Pengumuman Bantuan Biaya Pendidikan Gelombang 2.pdf']) }}"
+                            <td><a href="{{ route('download', ['filename' => 'Surat Pernyataan Tidak Menerima Beasiswa Sumber Lain.pdf']) }}"
                                     class="btn-unduh">Unduh</a></td>
                         </tr>
                         <tr class="table-head">
                             <td>TEMPLATE SURAT PERNYATAAN TIDAK BERSTATUS SEBAGAI APARATUR SIPIL NEGARA(ASN)</td>
-                            <td><a href="{{ route('download', ['filename' => 'Pengumuman Bantuan Biaya Pendidikan Gelombang 2.pdf']) }}"
+                            <td><a href="{{ route('download', ['filename' => 'Surat Pernyataan Tidak Berstatus Sebagai ASN.pdf']) }}"
                                     class="btn-unduh">Unduh</a></td>
                         </tr>
                     </tbody>

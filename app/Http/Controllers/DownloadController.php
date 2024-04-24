@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Response;
+use App\Http\Controllers\Controller;
 
 class DownloadController extends Controller
 {
