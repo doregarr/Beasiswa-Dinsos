@@ -1,0 +1,60 @@
+.unduh-container {
+    flex: 1;
+    padding: 20px;
+}
+
+.table-container{
+    margin-top: 1.5rem;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0 5px; 
+}
+
+.table-head {
+    width: 100%;
+    
+}
+
+.table-font {
+    border-radius: 20px;
+    padding: 12px;
+    margin: 3px;
+    font-family: Poppins;
+    font-weight: 400;
+    border: 2px solid #007cea;
+    
+}
+
+.btn-unduh {
+    border: none;
+    margin-left: 1rem;
+    padding: 10px 10px;
+    font-size: 15px;
+    color: #007cea;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .unduh-container .box-title .box-image-unduh {
+        display: flex;
+        justify-content: end;
+    }
+    .unduh-container .box-title .box-image-unduh .icon1 {
+        display: flex;
+        width: 8%;
+        height: auto;
+    }
+    .unduh-container .box-title .box-image-unduh .icon2 {
+        display: flex;
+        width: 25%;
+        height: auto;
+    }
+    .table-container{
+        margin-top: 0.3rem;
+    }
+}

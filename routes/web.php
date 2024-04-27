@@ -5,7 +5,7 @@ use App\Http\Controllers\DownloadController;
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('login');
 });
 Route::get('/registrasi', function () {
     return view('registrasi');

@@ -1,15 +1,10 @@
+@include('includes.head')
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrasi</title>
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+<link rel="stylesheet" href="{{ asset('css/registrasi.css') }}">
 </head>
 
 <body>
+
     <div class="title-container">
         <div class="box-title">
             <h2>Pengajuan Bantuan Biaya Pendidikan</h2>
@@ -20,63 +15,42 @@
             <img src="{{ asset('image/kolaborasi-medan-berkah.png') }}" class="icon2">
         </div>
     </div>
+
     <div class="card-container">
-        <div class="card">
-            <div class="table-container">
-                <table>
-                    <tbody>
-                        <tr class="table-head">
-                            <td>PENGUMUMAN BEASISWA GEL II</td>
-                            <td><a href="{{ route('download', ['filename' => 'Pengumuman Bantuan Biaya Pendidikan Gelombang 2.pdf']) }}"
-                                    class="btn-unduh">Unduh</a></td>
-                        </tr>
-                        <tr class="table-head">
-                            <td>SYARAT DAN KETENTUAN PENERIMA BANTUAN BEASISWA PENDIDIKAN</td>
-                            <td><a href="{{ route('download', ['filename' => 'Pengumuman Bantuan Biaya Pendidikan Gelombang 2.pdf']) }}"
-                                    class="btn-unduh">Unduh</a></td>
-                        </tr>
-                        <tr class="table-head">
-                            <td>DATA MAHASISWA CALON PENERIMA BANTUAN BIAYA PENDIDIKAN</td>
-                            <td><a href="{{ route('download', ['filename' => 'Pengumuman Bantuan Biaya Pendidikan Gelombang 2.pdf']) }}"
-                                    class="btn-unduh">Unduh</a></td>
-                        </tr>
-                        <tr class="table-head">
-                            <td>TEMPLATE SURAT PERMOHONAN DITUJUKAN KEPADA BAPAK WALI KOTA MEDAN Cq. KEPALA DINAS SOSIAL
-                                KOTA MEDAN</td>
-                            <td><a href="{{ route('download', ['filename' => 'Pengumuman Bantuan Biaya Pendidikan Gelombang 2.pdf']) }}"
-                                    class="btn-unduh">Unduh</a></td>
-                        </tr>
-                        <tr class="table-head">
-                            <td>TEMPLATE SURAT PERNYATAAN TIDAK MENERIMA BEASISWA/BANTUAN BIAYA PENDIDIKAN DARI SUMBER
-                                LAIN</td>
-                            <td><a href="{{ route('download', ['filename' => 'Pengumuman Bantuan Biaya Pendidikan Gelombang 2.pdf']) }}"
-                                    class="btn-unduh">Unduh</a></td>
-                        </tr>
-                        <tr class="table-head">
-                            <td>TEMPLATE SURAT PERNYATAAN TIDAK BERSTATUS SEBAGAI APARATUR SIPIL NEGARA(ASN)</td>
-                            <td><a href="{{ route('download', ['filename' => 'Pengumuman Bantuan Biaya Pendidikan Gelombang 2.pdf']) }}"
-                                    class="btn-unduh">Unduh</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="card">
-            <div class="box">
+        
+        @include('components.layouts.unduh')
+        <div class="registrasi-container">
+           <div class="box-container">
+            <div class="box-registrasi">
                 <div class="input-container">
                     <h3 class="registrasi">Registrasi</h3>
-                    <input type="text" placeholder="Masukkan Nomor Induk Kependudukan" class="input-nik">
-                    <input type="text" placeholder="Masukkan Nama Anda" class="input-nama">
-                    <input type="text" placeholder="Masukkan Nomor Email" class="input-email">
-                    <input type="password" placeholder="Masukkan Password" class="input-password">
+                    <div class="input-wrapper">
+                        <i for="nik" class="fas fa-id-card placeholder-icon"></i>
+                        <input type="text" id="nik" placeholder="Masukkan Nomor Induk Kependudukan"
+                            class="input-nik">
+                    </div>
+                    <div class="input-wrapper">
+                        <i for="nama" class="fa fa-user placeholder-icon"></i>
+                        <input type="text" id="nama" placeholder="Masukkan Nama Anda"
+                            class="input-nik">
+                    </div>
+                    <div class="input-wrapper">
+                        <i for="email" class="fas fa-envelope placeholder-icon"></i>
+                        <input type="text" id="email" placeholder="Masukkan Email Anda"
+                            class="input-nik">
+                    </div>
+                    <div class="input-wrapper">
+                        <i for="nik" class="fas fa-lock placeholder-icon"></i>
+                        <input type="password" placeholder="Masukkan Password" class="input-password">
+                    </div>
                 </div>
-                <div class="btn-registrasi">
-                    <button type="submit"> Registrasi </button>
-                    <a href ="/">Login</a>
+                <div class="button">
+                    <button onclick="window.location.href='/'" type="submit" class="btn-login"> Login</button>
+                    <a href="/registrasi" class="btn-daftar">Daftar Akun</a>
                 </div>
             </div>
+           </div>
         </div>
-    </div>
     </div>
 </body>
 

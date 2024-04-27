@@ -1,0 +1,192 @@
+body{
+    margin: 0;
+}
+
+.title-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 5px;
+}
+
+.title-container .box-title{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.title-container .box-title h2 {
+    font-size: 1.8rem;
+    font-family: Poppins;
+    line-height: 0.2rem;
+}
+
+.title-container .box-title p {
+    font-family: Poppins;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 0.2rem;
+}
+
+.title-container .box-image{
+    display: flex;
+    align-items: center;
+}
+
+.title-container .box-image .icon1 {
+    width: 60px;
+    height: auto;
+    margin-right: 0.5rem;
+}
+
+.title-container .box-image .icon2 {
+    width: 200px;
+    height:auto;
+}
+
+.card-container {
+    display: flex;
+}
+
+.card-container .login-container{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: start;
+}
+
+.card-container .login-container .box-container{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 20px;
+    padding: 0 35px 20px;
+}
+
+.card-container .login-container .box-container .box-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 0 35px 20px;
+    width: 50%;
+    backdrop-filter: blur(10px);
+    background-color: rgba(204, 245, 255, 0.5);
+}
+
+.card-container .login-container .box-login .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.card-container .login-container .box-login .input-container .login {
+    display: flex;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.card-container .login-container .box-login .input-container .input-wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.placeholder-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    padding-bottom: 5px;
+}
+
+.input-nik, .input-password  {
+    width: 100%;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    height: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.card-container .login-container .box-login .button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-container .login-container .box-login .button .btn-login {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 16px; 
+    color: #fff;
+    background-color: #007cea;
+    border: none; 
+    padding: 10px 20px;
+    border-radius: 20px; 
+    cursor: pointer;
+    margin-right: 10px;
+}
+.card-container .login-container .box-login .button .btn-daftar {
+    text-decoration: none;
+    font-family: Poppins;
+    color: #007cea;
+}
+
+@media screen and (max-width: 768px) {
+    .title-container{
+        flex-direction: column;
+    }
+    .title-container .box-image{
+        display: flex;
+        justify-content: center;
+        order:1
+    }
+    .title-container .box-image .icon1{
+        width: 6%;
+    }
+    .title-container .box-image .icon2{
+        width: 20%;
+    }
+    .title-container .box-title{
+        order: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .title-container .box-title h2{
+        font-size: 1.5rem;
+        line-height: 1.3rem;
+    }
+    .title-container .box-title p{
+        font-size: 1.2rem;
+        line-height: 1.3rem;
+        margin-top: -0.5rem;
+    }
+    .card-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-container .card .box{
+        padding-bottom: 40px;
+        width: 80%;
+        margin: 1.3rem auto;
+    }
+    .card-container .card{
+        padding: 20px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .card-container .login-container .box-container .box-login{
+        width: 300px;
+    }
+}
+
+
