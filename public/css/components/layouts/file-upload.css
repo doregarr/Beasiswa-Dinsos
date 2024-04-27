@@ -1,0 +1,46 @@
+@import '../include/variable.css';
+
+.upload-container{
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    margin-bottom: 20px; 
+}
+
+.upload-file {
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+    margin-bottom: 10px
+}
+.upload-file .form-control{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.upload-file input[type="file"]{
+    font-family: Poppins;
+    font-size: 14px;
+    cursor: pointer;
+}
+.upload-file input[type="file"]::-webkit-file-upload-button {
+    padding: 5px;
+    border: none;
+    font-family: Poppins;
+    font-size: 14px;
+    background-color: var(--primer);
+    cursor: pointer;
+}
+.upload-file input[type="file"]::-webkit-file-upload-button:hover {
+    background-color: var(--secondary);
+}
+
+.btn-submit{
+    background-color: var(--secondary);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-family: Poppins;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 15px;
+}

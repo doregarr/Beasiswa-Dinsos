@@ -1,6 +1,6 @@
 .unduh-container {
     flex: 1;
-    padding: 20px;
+    padding: 0 20px 20px;
 }
 
 .table-container{
@@ -39,22 +39,12 @@ table {
 }
 
 @media screen and (max-width: 768px) {
-
-    .unduh-container .box-title .box-image-unduh {
-        display: flex;
-        justify-content: end;
-    }
-    .unduh-container .box-title .box-image-unduh .icon1 {
-        display: flex;
-        width: 8%;
-        height: auto;
-    }
-    .unduh-container .box-title .box-image-unduh .icon2 {
-        display: flex;
-        width: 25%;
-        height: auto;
-    }
     .table-container{
         margin-top: 0.3rem;
+    }
+    .table-font {
+        padding: 8px;
+        margin: 3px;
+        font-size: 0.8rem;
     }
 }
