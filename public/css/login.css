@@ -1,3 +1,5 @@
+@import '../css/components/include/variable.css';
+
 .card-container {
     display: flex;
 }
@@ -29,7 +31,7 @@
     padding: 0 35px 20px;
     width: 50%;
     backdrop-filter: blur(10px);
-    background-color: rgba(204, 245, 255, 0.5);
+    background-color:var(--primer);
 }
 
 .card-container .login-container .box-login .input-container {
