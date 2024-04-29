@@ -18,3 +18,4 @@ Route::get('/biodata', function () {
 Route::get('/download/{filename}', [DownloadController::class, 'download'])->name('download');
 Route::get('file-upload', [FileController::class, 'create'])->name('file');
 Route::post('file-upload', [FileController::class, 'upload'])->name('file.store');
+Route::post('/biodata', [FileController::class, 'uploadBiodata'])->name('biodata.upload');
