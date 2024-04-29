@@ -65,7 +65,7 @@
             </div>
             <div class="btn-login">
                 <button type="submit"> Login</button>
-                <a href>Daftar Akun</a>
+                <a href ="/registrasi">Daftar Akun</a>
             </div>
         </div>
     </div>

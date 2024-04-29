@@ -11,6 +11,11 @@ Route::get('/registrasi', function () {
     return view('registrasi');
 });
 
+Route::get('/biodata', function () {
+    return view('Biodata.biodata');
+});
+
+
 
 Route::get('/download/{filename}', [DownloadController::class, 'download'])->name('download');
 

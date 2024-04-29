@@ -71,7 +71,7 @@
                     <input type="password" placeholder="Masukkan Password" class="input-password">
                 </div>
                 <div class="btn-registrasi">
-                    <button type="submit"> Registrasi </button>
+                    <button type="submit"> Daftar Akun </button>
                     <a href ="/">Login</a>
                 </div>
             </div>

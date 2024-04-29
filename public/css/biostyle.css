@@ -1,0 +1,323 @@
+.judul1 .box-image {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: flex-start;
+   
+}
+
+.judul1 .box-image .icon1 {
+    width: 40px;
+    height: auto;
+    margin-right: 0.5rem;
+}
+
+.judul1 .box-image .icon2 {
+    width: 10%;
+    height:auto;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.judul {
+    font-family: Arial, sans-serif; /* Font family */
+    align-items: flex-start;
+}
+.box-judul {
+    text-align: center; /* Memusatkan tulisan di tengah */
+}
+
+.box-judul h2 {
+    font-size: 35px; /* Font size untuk judul */
+    margin-bottom: 5px; /* Jarak antara judul dan teks */
+    justify-content: center;
+
+}
+
+.box-judul p {
+    font-size: 27px; /* Font size untuk teks */
+}
+.judul2{
+
+    text-align: center;
+    margin: 50px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    border-top: 1px solid black; /*digunakan untuk menentukan gaya, lebar, dan warna dari border di bagian atas suatu elemen.*/
+    border-bottom: 1px solid black; /* Atur properti sesuai kebutuhan */
+    padding-bottom: 10px; /* Jarak antara teks dan garis */
+    padding-top: 10px;
+    background:rgb(108, 239, 9);
+}
+
+
+/* upload foto */
+
+
+.upload-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 100px 50px;
+}
+
+.upload-container input[type="file"] {
+    position: absolute;
+    font-size: 200px;
+    opacity: 0;
+    right: 0;
+    top: 0;
+    margin: 50px 50px;
+
+}
+
+.upload{
+    width: 150px;
+    position: relative;
+    margin: auto;
+    
+}
+
+.upload img{
+    border-radius: 0%;
+    border: 6px solid #eaeaea;
+}
+
+.upload .round{
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    background: #00B4FF;
+    width: 32px;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+   
+}
+
+.upload .round input[type="file"]{
+    position:absolute;
+    transform: scale(4);
+    opacity: 0;
+}
+
+input[type=file]::-webkit-file-upload-button{
+    cursor: pointer;
+}
+
+/* table */
+.table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+   
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Data Pribadi  */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    width: 150px; /* Atur lebar label sesuai kebutuhan */
+    margin-right: 15px; /* Atur jarak antara label dan input */
+    margin-left: 15px;
+}
+
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+/* Profil Akademik   */
+.card1 {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-header1 {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.card-body1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group1 label {
+    width: 150px; /* Atur lebar label sesuai kebutuhan */
+    margin-right: 15px; /* Atur jarak antara label dan input */
+    margin-left: 15px;
+}
+
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+/* Data keluarga  */
+.card2 {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-header2 {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.card-body2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group2 label {
+    width: 150px; /* Atur lebar label sesuai kebutuhan */
+    margin-right: 15px; /* Atur jarak antara label dan input */
+    margin-left: 15px;
+}
+
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+
+/* Bagi Card  */
