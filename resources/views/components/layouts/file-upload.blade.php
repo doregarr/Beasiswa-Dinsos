@@ -1,4 +1,5 @@
-@include('includes.head')
+@include('components.includes.head')
+
 <link rel="stylesheet" href="{{ asset('css/components/layouts/file-upload.css') }}">
 </head>
 

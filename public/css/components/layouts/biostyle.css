@@ -1,0 +1,144 @@
+@import '../include/variable.css';
+
+.upload-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 100px 50px;
+}
+
+.upload-container input[type="file"] {
+    position: absolute;
+    font-size: 200px;
+    opacity: 0;
+    right: 0;
+    top: 0;
+    margin: 50px 50px;
+
+}
+
+.upload{
+    width: 150px;
+    position: relative;
+    margin: auto;
+    
+}
+
+.upload img{
+    border-radius: 0%;
+    border: 6px solid #eaeaea;
+}
+
+.upload .round{
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    background: #00B4FF;
+    width: 32px;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+   
+}
+
+.upload .round input[type="file"]{
+    position:absolute;
+    transform: scale(4);
+    opacity: 0;
+}
+
+input[type=file]::-webkit-file-upload-button{
+    cursor: pointer;
+}
+
+.biodata-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container-row
+{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: center;
+}
+
+.flex-container{
+    padding: 0 10px;
+}
+
+.data-card {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.card-header {
+    background-color:var(--primer);
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    width: 150px;
+}
+
+
+label {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    font-family: Poppins;
+}
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+/* table */
+.table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+   
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+}
