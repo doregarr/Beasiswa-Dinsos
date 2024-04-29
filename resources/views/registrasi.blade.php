@@ -62,20 +62,25 @@
             </div>
         </div>
         <div class="card">
+
             <div class="box">
+                <form method="POST" action="{{ route('register') }}">
+                    @csrf
                 <div class="input-container">
+
                     <h3 class="registrasi">Registrasi</h3>
-                    <input type="text" placeholder="Masukkan Nomor Induk Kependudukan" class="input-nik">
-                    <input type="text" placeholder="Masukkan Nama Anda" class="input-nama">
-                    <input type="text" placeholder="Masukkan Nomor Email" class="input-email">
-                    <input type="password" placeholder="Masukkan Password" class="input-password">
+                    <input type="text" placeholder="Masukkan Nomor Induk Kependudukan" class="input-nik "required name="nik">
+                    <input type="text" placeholder="Masukkan Nama Anda" class="input-nama" required name="name">
+                    <input type="text" placeholder="Masukkan Nomor Email" class="input-email" required name="email">
+                    <input type="password" placeholder="Masukkan Password" class="input-password" name="password">
                 </div>
                 <div class="btn-registrasi">
                     <button type="submit"> Registrasi </button>
-                    <a href ="/">Login</a>
+                    <a href ="welcome">Login</a>
                 </div>
             </div>
         </div>
+    </form>
     </div>
     </div>
 </body>

@@ -9,7 +9,16 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-
+@if (session('Gagal'))
+    <div class="alert-danger" id="notification">
+        {{ session('Gagal') }}
+    </div>
+@endif
+@if (session('success'))
+    <div id="notification" class=" alert-success">
+        {{ session('success') }}
+    </div>
+@endif
 <body>
     <div class="title-container">
         <div class="box-title">
@@ -64,10 +73,12 @@
         </div>
         <div class="card">
             <div class="box">
+                <form method="POST" action="{{ route('login') }}">
+                    @csrf
                 <div class="input-container">
                     <h3 class="login">Login</h3>
-                    <input type="password" placeholder="Masukkan Password" class="input-password">
-                    <input type="password" placeholder="Masukkan Password" class="input-password">
+                    <input type="text" placeholder="Masukkan NIK" class="input-password" name="nik" id="nik">
+                    <input type="password" placeholder="Masukkan Password" class="input-password" name="password" id="password">
 
                 </div>
                 <div class="btn-login">
@@ -76,8 +87,29 @@
                 </div>
             </div>
         </div>
+    </form>
     </div>
     </div>
+    <script>
+        // Menyembunyikan notifikasi setelah 5 detik
+        setTimeout(function(){
+            var notification = document.getElementById('notification');
+            if(notification) {
+                notification.style.display = 'none';
+            }
+        }, 3000); // 5000 milidetik = 3 detik
+
+    </script>
+     {{-- <script>
+        // Menyembunyikan notifikasi setelah 5 detik
+        setTimeout(function(){
+            var notification = document.getElementById('danger');
+            if(notification) {
+                notification.style.display = 'none';
+            }
+        }, 3000); // 5000 milidetik = 3 detik
+
+    </script> --}}
 </body>
 
 </html>
