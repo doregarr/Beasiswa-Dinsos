@@ -16,7 +16,7 @@
     display: flex;
     flex: 1;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     border-radius: 20px;
     padding: 0 35px 20px;
 }
@@ -25,7 +25,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     border-radius: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     padding: 0 35px 20px;
@@ -82,12 +82,12 @@
 .card-container .login-container .box-login .button .btn-login {
     font-family: Poppins;
     font-weight: 600;
-    font-size: 16px; 
+    font-size: 16px;
     color: #fff;
     background-color: #007cea;
-    border: none; 
+    border: none;
     padding: 10px 20px;
-    border-radius: 20px; 
+    border-radius: 20px;
     cursor: pointer;
     margin-right: 10px;
 }
@@ -117,4 +117,31 @@
     }
 }
 
+.alert-success {
+    font-family: Arial,  sans-serif;
+    font-size: 16px; /* Ubah ukuran teks sesuai kebutuhan */
+    padding: 10px 20px; /* Atur padding atas dan bawah 10px, dan padding kiri dan kanan 20px */
+    /* Tambahan gaya lainnya */
+    background-color: #d4edda; /* Warna latar belakang */
+    color: #155724; /* Warna teks */
+    border: 1px solid #c3e6cb; /* Garis pinggir */
+    border-radius: 5px; /* Sudut lengkung */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
+}
+.alert-danger {
+    font-family: Arial,  sans-serif;
+    font-size: 16px; /* Ubah ukuran teks sesuai kebutuhan */
+    padding: 10px 20px; /* Atur padding atas dan bawah 10px, dan padding kiri dan kanan 20px */
+    /* Tambahan gaya lainnya */
+    background-color: rgb(230, 195, 195); /* Warna latar belakang */
+    color: #000201; /* Warna teks */
+    border: 1px solid rgb(230, 195, 195); /* Garis pinggir */
+    border-radius: 5px; /* Sudut lengkung */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}

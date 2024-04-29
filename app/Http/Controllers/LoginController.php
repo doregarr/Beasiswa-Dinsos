@@ -8,40 +8,34 @@ use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
+    // Menampilkan form login
     public function showLoginForm()
     {
-        return view('login');
+        return view('login'); // Mengembalikan view untuk halaman login (misalnya login.blade.php)
     }
 
+    // Memproses login
     public function login(Request $request)
     {
-        // Validasi data yang dikirimkan oleh form login
-        $credentials = $request->validate([
-            'nik' => 'required',
-            'password' => 'required',
+        // Validasi input
+        $request->validate([
+            'nik' => 'required|string',
+            'password' => 'required|string',
         ]);
 
-        // Coba melakukan proses autentikasi
-        $user = User::where('nik', $credentials['nik'])->first(); // Ambil pengguna dari database
+        $credentials = $request->only('nik', 'password');
 
-        if ($user && Auth::attempt($credentials)) {
-            // Redirect ke halaman sesuai peran pengguna
-            if ($user->role == 'admin') {
-                return redirect('adminPage');
-            } elseif ($user->role == 'user') {
-                return redirect()->route('index1');
+        // Memeriksa kredensial pengguna
+        if (Auth::attempt($credentials)) {
+            // Jika kredensial valid, arahkan ke halaman yang sesuai dengan peran pengguna
+            if (auth()->user()->role === 'user') {
+                return redirect()->route('userPage');
+            } else  if (auth()->user()->role === 'admin') {
+                return redirect()->route('adminPage');
             }
-        }else {
-            // Jika autentikasi gagal, kembalikan ke halaman login dengan pesan error
-            return redirect()->route('login')->with('Gagal', 'NIK atau Password Salah');
+        } else {
+            // Jika kredensial tidak valid, tambahkan pesan kesalahan dan kembali ke halaman login
+            return back()->withErrors(['nik' => 'Invalid NIK or password']);
         }
-    }
-
-    // Proses logout
-    public function logout()
-    {
-        Auth::logout();
-
-        return redirect('/login');
     }
 }

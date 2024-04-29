@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Symfony\Component\HttpFoundation\Response;
 
-class VerifSession
+class   VerifSession
 {
     public function handle(Request $request, Closure $next)
     {

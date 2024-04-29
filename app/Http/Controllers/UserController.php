@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    public function showIndexPage()
+    public function showUserPage()
     {
-        return view('index1');
+        return view('userPage');
     }
 }
