@@ -2,9 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FileController;
-use App\Http\Controllers\UserController;
-use App\Http\Controllers\AdminController;
-use App\Http\Controllers\IndexController;
 
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\DownloadController;
@@ -16,8 +13,9 @@ Route::get('/', function () {
 Route::get('/registrasi', function () {
     return view('registrasi');
 });
+
 Route::get('/biodata', function () {
-    return view('components.layouts.file-upload');
+    return view('components.layouts.biodata');
 });
 
 Route::get('/download/{filename}', [DownloadController::class, 'download'])->name('download');

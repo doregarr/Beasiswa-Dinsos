@@ -1,11 +1,11 @@
-@include('includes.head')
+@include('components.includes.head')
 
 <link rel="stylesheet" href="{{ asset('css/login.css') }}">
 <title>Login</title>
 </head>
 
 <body>
-    @include('includes.title')
+    @include('components.includes.title')
     
     <div class="card-container">
 

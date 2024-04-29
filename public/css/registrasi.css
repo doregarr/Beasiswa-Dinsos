@@ -79,7 +79,7 @@
     justify-content: space-around;
 }
 
-.card-container .registrasi-container .box-container .box-registrasi .button .btn-login {
+.card-container .registrasi-container .box-container .box-registrasi .button .btn-daftar {
     font-family: Poppins;
     font-weight: 600;
     font-size: 16px; 
@@ -91,7 +91,7 @@
     cursor: pointer;
     margin-right: 10px;
 }
-.card-container .registrasi-container .box-container .box-registrasi .button .btn-daftar {
+.card-container .registrasi-container .box-container .box-registrasi .button .btn-login {
     text-decoration: none;
     font-family: Poppins;
     color: #007cea;

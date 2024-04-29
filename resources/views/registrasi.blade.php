@@ -1,4 +1,4 @@
-@include('includes.head')
+@include('components.includes.head')
 
 <link rel="stylesheet" href="{{ asset('css/registrasi.css') }}">
 <title>Registrasi</title>
@@ -10,7 +10,7 @@
 @endif
 <body>
 
-    @include('includes.title')
+    @include('components.includes.title')
 
     <div class="card-container">
 
@@ -44,9 +44,8 @@
                     </div>
                 </div>
                 <div class="button">
-                    <a href="/" class="btn-daftar">Login</a>
-                    <button  type="submit" class="btn-login"> Daftar Akun</button>
-
+                    <button type="submit" class="btn-daftar"> Registrasi </button>
+                    <a href ="/" class="btn-login">Login</a>
                 </div>
             </div>
            </div>
