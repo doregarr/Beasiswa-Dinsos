@@ -9,7 +9,7 @@ class AdminController extends Controller
 
       public function showAdminPage()
     {
-        return view('adminPage');
+        return view('Admin.adminPage');
     }
 
 

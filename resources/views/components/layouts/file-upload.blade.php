@@ -4,7 +4,7 @@
 </head>
 
 <body>
-    @include('includes.title')
+    @include('components.includes.title')
     <div class="upload-container">
         <div class="row justify-content-center">
             <div class="col-lg-8">
@@ -17,123 +17,124 @@
                             @csrf
 
                             <div class="upload-file">
-                                <label for="scan_permohonan1" class="form-label">Surat Asli Permohonan</label>
-                                <input type="file" class="form-control @error('file1') is-invalid @enderror"
-                                    id="scan_permohonan" name="file1">
-                                @error('file1')
+                                <label for="surat_permohonan" class="form-label">Surat Asli Permohonan</label>
+                                <input type="file" class="form-control @error('surat_permohonan') is-invalid @enderror"
+                                    id="surat_permohonan" name="surat_permohonan">
+                                @error('surat_permohonan')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
                             </div>
                             <div class="upload-file">
-                                <label for="scan_permohonan2" class="form-label">Scan Asli Biodata Pribadi</label>
-                                <input type="file" class="form-control @error('file2') is-invalid @enderror"
-                                    id="scan_permohonan" name="file2">
-                                @error('file2')
+                                <label for="biodata_pribadi" class="form-label">Scan Asli Biodata Pribadi</label>
+                                <input type="file" class="form-control @error('biodata_pribadi') is-invalid @enderror"
+                                    id="biodata_pribadi" name="biodata_pribadi">
+                                @error('biodata_pribadi')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
                             </div>
                             <div class="upload-file">
-                                <label for="scan_permohonan3" class="form-label">Pas Foto Ukuran</label>
-                                <input type="file" class="form-control @error('file3') is-invalid @enderror"
-                                    id="scan_permohonan" name="file3">
+                                <label for="pas_foto" class="form-label">Pas Foto Ukuran</label>
+                                <input type="file" class="form-control @error('pas_foto') is-invalid @enderror"
+                                    id="pas_foto" name="pas_foto">
                                 @error('file3')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
                             </div>
                             <div class="upload-file">
-                                <label for="scan_permohonan4" class="form-label">Kartu Tanda Penduduk</label>
-                                <input type="file" class="form-control @error('file4') is-invalid @enderror"
-                                    id="scan_permohonan" name="file4">
+                                <label for="kk" class="form-label">Rekening Bank Aktif</label>
+                                <input type="file" class="form-control @error('kk') is-invalid @enderror"
+                                    id="kk" name="kk">
+                                @error('kk')
+                                    <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
+                            </div>
+                            <div class="upload-file">
+                                <label for="ktp" class="form-label">Kartu Tanda Penduduk</label>
+                                <input type="file" class="form-control @error('ktp') is-invalid @enderror"
+                                    id="ktp" name="ktp">
                                 @error('file4')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
                             </div>
 
                             <div class="upload-file">
-                                <label for="scan_permohonan5" class="form-label">Kartu Aktif Mahasiswa</label>
-                                <input type="file" class="form-control @error('file5') is-invalid @enderror"
-                                    id="scan_permohonan" name="file5">
-                                @error('file5')
+                                <label for="ktm" class="form-label">Kartu Aktif Mahasiswa</label>
+                                <input type="file" class="form-control @error('ktm') is-invalid @enderror"
+                                    id="ktm" name="ktm">
+                                @error('ktm')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
                             </div>
                             <div class="upload-file">
-                                <label for="scan_permohonan6" class="form-label">Scan Surat Asli Permohonan</label>
-                                <input type="file" class="form-control @error('file6') is-invalid @enderror"
-                                    id="scan_permohonan" name="file6">
+                                <label for="surat_aktif_kuliah" class="form-label">Scan Surat Asli Permohonan</label>
+                                <input type="file" class="form-control @error('surat_aktif_kuliah') is-invalid @enderror"
+                                    id="surat_aktif_kuliah" name="surat_aktif_kuliah">
                                 @error('file6')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
                             </div>
                             <div class="upload-file">
-                                <label for="scan_permohonan7" class="form-label">Lembar DTKS dari Dinas Sosial Kota
+                                <label for="dtks" class="form-label">Lembar DTKS dari Dinas Sosial Kota
                                     Medan</label>
-                                <input type="file" class="form-control @error('file7') is-invalid @enderror"
-                                    id="scan_permohonan" name="file7">
-                                @error('file7')
+                                <input type="file" class="form-control @error('dtks') is-invalid @enderror"
+                                    id="dtks" name="dtks">
+                                @error('dtks')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
                             </div>
                             <div class="upload-file">
-                                <label for="scan_permohonan8" class="form-label">Surat Asli Permohonan Kepada Dinas
+                                <label for="permohonan_dinsos" class="form-label">Surat Asli Permohonan Kepada Dinas
                                     Sosial Kota Medan</label>
-                                <input type="file" class="form-control @error('file8') is-invalid @enderror"
-                                    id="scan_permohonan" name="file8">
-                                @error('file8')
+                                <input type="file" class="form-control @error('permohonan_dinsos') is-invalid @enderror"
+                                    id="permohonan_dinsos" name="permohonan_dinsos">
+                                @error('permohonan_dinsos')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
                             </div>
                             <div class="upload-file">
-                                <label for="scan_permohonan9" class="form-label">Surat Pernyataan Tidak Sedang Menerima
+                                <label for="surat_beasiswa" class="form-label">Surat Pernyataan Tidak Sedang Menerima
                                     Beasiswa</label>
-                                <input type="file" class="form-control @error('file9') is-invalid @enderror"
-                                    id="scan_permohonan" name="file9">
+                                <input type="file" class="form-control @error('surat_beasiswa') is-invalid @enderror"
+                                    id="surat_beasiswa" name="surat_beasiswa">
                                 @error('file9')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
                             </div>
                             <div class="upload-file">
-                                <label for="scan_permohonan10" class="form-label">Surat Pernyataan yang Bersangkutan
+                                <label for="surat_orangtua/wali" class="form-label">Surat Pernyataan yang Bersangkutan
                                     Orang Tua/Wali Tidak Berstatus ASN</label>
-                                <input type="file" class="form-control @error('file10') is-invalid @enderror"
-                                    id="scan_permohonan" name="file10">
-                                @error('file10')
+                                <input type="file" class="form-control @error('surat_orangtua/wali') is-invalid @enderror"
+                                    id="surat_orangtua/wali" name="surat_orangtua/wali">
+                                @error('surat_orangtua/wali')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
                             </div>
                             <div class="upload-file">
-                                <label for="scan_permohonan11" class="form-label">Transkrip Nilai Terakhir</label>
-                                <input type="file" class="form-control @error('file11') is-invalid @enderror"
-                                    id="scan_permohonan" name="file11">
-                                @error('file11')
+                                <label for="transkrip_nilai" class="form-label">Transkrip Nilai Terakhir</label>
+                                <input type="file" class="form-control @error('transkrip_nilai') is-invalid @enderror"
+                                    id="transkrip_nilai" name="transkrip_nilai">
+                                @error('transkrip_nilai')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
                             </div>
                             <div class="upload-file">
-                                <label for="scan_permohonan12" class="form-label">Tagihan Uang Kuliah/Bukti Pembayaran
+                                <label for="tagihan_ukt" class="form-label">Tagihan Uang Kuliah/Bukti Pembayaran
                                     Uang Kuliah Terakhir</label>
-                                <input type="file" class="form-control @error('file12') is-invalid @enderror"
-                                    id="scan_permohonan" name="file12">
-                                @error('file12')
+                                <input type="file" class="form-control @error('tagihan_ukt') is-invalid @enderror"
+                                    id="tagihan_ukt" name="tagihan_ukt">
+                                @error('tagihan_ukt')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
                             </div>
                             <div class="upload-file">
-                                <label for="scan_permohonan13" class="form-label">Rekening Bank Aktif</label>
-                                <input type="file" class="form-control @error('file13') is-invalid @enderror"
-                                    id="scan_permohonan" name="file13">
-                                @error('file13')
+                                <label for="rekening_bank" class="form-label">Rekening Bank Aktif</label>
+                                <input type="file" class="form-control @error('rekening_bank') is-invalid @enderror"
+                                    id="rekening_bank" name="rekening_bank">
+                                @error('rekening_bank')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
                             </div>
-                            <div class="upload-file">
-                                <label for="scan_permohonan14" class="form-label">Rekening Bank Aktif</label>
-                                <input type="file" class="form-control @error('file14') is-invalid @enderror"
-                                    id="scan_permohonan" name="file14">
-                                @error('file14')
-                                    <div class="invalid-feedback">{{ $message }}</div>
-                                @enderror
-                            </div>
+                            
 
                             <button type="submit" class=" btn-submit">Submit</button>
                         </form>

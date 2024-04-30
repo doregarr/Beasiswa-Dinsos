@@ -27,7 +27,7 @@ class RegisterController extends Controller
         $user->name = $request->name;
         $user->email = $request->email;
         $user->password = bcrypt($request->password);
-        $user->role='admin';
+        $user->role='user';
         $user->save();
 
         // Anda dapat menambahkan logika lain di sini, misalnya mengirim email verifikasi, dll.

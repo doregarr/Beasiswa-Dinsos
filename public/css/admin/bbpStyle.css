@@ -1,0 +1,40 @@
+@import url('../components/include/variable.css');
+
+.container-bbp{
+
+}
+
+.button-container{
+    margin: 30px 0 
+}
+
+.btn-status{
+    border: 2px solid var(--secondary) ;
+    border-radius: 10px;
+    padding: 8px;
+    margin-left: 5px;
+    font-family: Poppins;
+    font-weight: 400;
+}
+
+.btn-status.active{
+    background-color: var(--secondary);
+    color: #fff;
+}
+
+.table-container{
+    width: 100%;
+}
+
+.table-bbp{
+    width: 100%;
+    background-color: var(--primer);
+    
+    
+}
+tbody, td, tfoot, th, thead, tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+    padding: 5px;
+}

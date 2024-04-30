@@ -17,7 +17,11 @@ Route::get('/registrasi', function () {
 });
 
 Route::get('/biodata', function () {
-    return view('components.layouts.biodata');
+    return view('components.layouts.file-upload');
+});
+
+Route::get('/bbp-diajukan', function () {
+    return view('Admin.bbpDiajukan');
 });
 
 Route::get('/download/{filename}', [DownloadController::class, 'download'])->name('download');
@@ -32,3 +36,7 @@ Route::post('/login', [LoginController::class, 'login']);
 Route::get('/userPage', [UserController::class, 'showUserPage'])->name('userPage');
 
 Route::get('/adminPage', [AdminController::class, 'showAdminPage'])->name('adminPage');
+
+Route::get('file-upload', [FileController::class, 'create'])->name('file');
+Route::post('file-upload', [FileController::class, 'upload'])->name('file.store');
+Route::post('/biodata', [FileController::class, 'uploadBiodata'])->name('biodata.upload');
