@@ -17,7 +17,7 @@ Route::get('/registrasi', function () {
 });
 
 Route::get('/biodata', function () {
-    return view('components.layouts.biodata');
+    return view('User.biodataBBP');
 });
 
 Route::get('/download/{filename}', [DownloadController::class, 'download'])->name('download');

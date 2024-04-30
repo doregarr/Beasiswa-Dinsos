@@ -5,7 +5,7 @@
 </head>
 
 <body>
-    @include('components.includes.title')
+    <!-- @include('components.includes.title')  -->
 
     <div class="Foto">
         <div class="upload">

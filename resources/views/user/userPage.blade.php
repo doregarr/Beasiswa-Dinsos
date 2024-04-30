@@ -85,16 +85,6 @@
               <hr class="dropdown-divider">
             </li>
 
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="user.php">
-                <i class="bi bi-person"></i>
-                <span>My Profile</span>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
 
             <li>
               <hr class="dropdown-divider">
@@ -122,43 +112,33 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link " href="index1.php">
+        <a class="nav-link " href="/biodata">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
       </li><!-- End Dashboard Nav -->
 
+      <li class="nav-item">
+        <a class="nav-link " href="/biodata">
+          <i class="bi bi-person"></i>
+          <span>Formulir Pendaftran</span>
+        </a>
+      </li><!-- End Formulir Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link " href="index1.php">
+          <i class="bi bi-person"></i>
+          <span>My View Profil</span>
+        </a>
+      </li><!-- End view Nav -->
 
 
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-journal-text"></i><span>Forms</span><i class="bi bi-chevron-down ms-auto"></i>
+        <a class="nav-link " href="index1.php">
+          <i class="bi bi-grid"></i>
+          <span>Log-Out</span>
         </a>
-        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="formdata.php">
-              <i class="bi bi-circle"></i><span>Form Pendaftaran</span>
-            </a>
-          </li>
-
-
-
-        </ul>
-      </li><!-- End Forms Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-layout-text-window-reverse"></i><span>Tables</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="tabeldata.php">
-              <i class="bi bi-circle"></i><span>Table Data Calon </span>
-            </a>
-          </li>
-
-        </ul>
-      </li><!-- End Tables Nav -->
+      </li><!-- End logout Nav -->
 
 
 

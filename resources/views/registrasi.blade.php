@@ -1,4 +1,4 @@
-@include('components.includes.head')
+ @include('components.includes.head')
 
 <link rel="stylesheet" href="{{ asset('css/registrasi.css') }}">
 <title>Registrasi</title>
