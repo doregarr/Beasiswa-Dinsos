@@ -134,7 +134,7 @@
 
 
       <li class="nav-item">
-        <a class="nav-link " href="index1.php">
+        <a class="nav-link " href='/'>
           <i class="bi bi-grid"></i>
           <span>Log-Out</span>
         </a>
