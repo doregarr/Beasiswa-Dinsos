@@ -1,4 +1,4 @@
-@include('components.includes.head')
+ @include('components.includes.head')
 
 <link rel="stylesheet" href="{{ asset('css/registrasi.css') }}">
 <title>Registrasi</title>
@@ -14,7 +14,6 @@
 
     <div class="card-container">
 
-        @include('components.layouts.unduh')
         <div class="registrasi-container">
            <div class="box-container">
             <div class="box-registrasi">

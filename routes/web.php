@@ -13,10 +13,17 @@ Route::get('/', function () {
     return view('login');
 });
 Route::get('/registrasi', function () {
-    return view('registrasi');
+    return view('user.registrasiUser');
+});
+Route::get('/admin/registrasi', function () {
+    return view('admin.registrasiAdmin');
 });
 
 Route::get('/biodata', function () {
+    return view('user.biodataBbp');
+});
+
+Route::get('/file-upload', function () {
     return view('components.layouts.file-upload');
 });
 
@@ -39,4 +46,4 @@ Route::get('/adminPage', [AdminController::class, 'showAdminPage'])->name('admin
 
 Route::get('file-upload', [FileController::class, 'create'])->name('file');
 Route::post('file-upload', [FileController::class, 'upload'])->name('file.store');
-Route::post('/biodata', [FileController::class, 'uploadBiodata'])->name('biodata.upload');
+Route::post('/file-upload', [FileController::class, 'uploadBiodata'])->name('biodata.upload');
