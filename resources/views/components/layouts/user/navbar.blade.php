@@ -40,7 +40,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link " href="/biodata">
+                <a class="nav-link " href="/biodata/data-pribadi">
                     <i class="bi bi-person"></i>
                     <span>Formulir Pendaftran</span>
                 </a>

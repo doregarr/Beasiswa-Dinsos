@@ -13,7 +13,7 @@ class FileController extends Controller
      */
     public function create()
     {
-        return view('file-upload');
+        return view('user.file-upload');
     }
 
     /**

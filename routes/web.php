@@ -15,21 +15,21 @@ Route::get('/', function () {
 Route::get('/registrasi', function () {
     return view('user.registrasiUser');
 });
-Route::get('/admin/registrasi', function () {
-    return view('admin.registrasiAdmin');
-});
 
-Route::get('/biodata', function () {
-    return view('user.biodataBbp');
+// Formulir BBP
+Route::get('/biodata/data-pribadi', function () {
+    return view('user.dataPribadi');
 });
-
-Route::get('/file-upload', function () {
-    return view('components.layouts.file-upload');
+Route::get('/biodata/data-keluarga', function () {
+    return view('user.dataKeluarga');
 });
-
-Route::get('/bbp-diajukan', function () {
-    return view('Admin.bbpDiajukan');
+Route::get('/biodata/profil-akademik', function () {
+    return view('user.profilAkademik');
 });
+Route::get('biodata/file-upload', function () {
+    return view('user.file-upload');
+});
+// End Formulir BBP
 
 Route::get('/download/{filename}', [DownloadController::class, 'download'])->name('download');
 Route::get('components/layouts/file-upload', [FileController::class, 'create'])->name('file');
@@ -37,13 +37,19 @@ Route::post('components/layouts/file-upload', [FileController::class, 'upload'])
 Route::get('/register', [RegisterController::class, 'showRegister'])->name('register');
 Route::post('/register', [RegisterController::class, 'registration']);
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
-
 Route::post('/login', [LoginController::class, 'login']);
 
 Route::get('/userPage', [UserController::class, 'showUserPage'])->name('userPage');
 
-Route::get('/adminPage', [AdminController::class, 'showAdminPage'])->name('adminPage');
-
 Route::get('file-upload', [FileController::class, 'create'])->name('file');
 Route::post('file-upload', [FileController::class, 'upload'])->name('file.store');
 Route::post('/file-upload', [FileController::class, 'uploadBiodata'])->name('biodata.upload');
+
+
+Route::get('/admin/registrasi', function () {
+    return view('admin.registrasiAdmin');
+});
+Route::get('/bbp-diajukan', function () {
+    return view('Admin.bbpDiajukan');
+});
+Route::get('/adminPage', [AdminController::class, 'showAdminPage'])->name('adminPage');

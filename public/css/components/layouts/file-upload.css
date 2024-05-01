@@ -35,12 +35,17 @@
 }
 
 .btn-submit{
+    width: 100%;
+    margin-top: 5px;
+    border: 2px solid var(--secondary);
     background-color: var(--secondary);
-    border: none;
-    cursor: pointer;
     padding: 10px;
-    font-family: Poppins;
-    font-size: 14px;
-    color: #fff;
-    border-radius: 15px;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.btn-submit:hover{
+    background-color: #fff;
+    color: var(--secondary);
 }
