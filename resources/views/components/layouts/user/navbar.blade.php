@@ -33,7 +33,7 @@
         <ul class="sidebar-nav" id="sidebar-nav">
 
             <li class="nav-item">
-                <a class="nav-link " href="/biodata">
+                <a class="nav-link " href="/userPage">
                     <i class="bi bi-grid"></i>
                     <span>Dashboard</span>
                 </a>
@@ -47,7 +47,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link " href="index1.php">
+                <a class="nav-link " href="{{ route('profile.show') }}">
                     <i class="bi bi-person"></i>
                     <span>My View Profil</span>
                 </a>

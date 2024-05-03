@@ -8,6 +8,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\DownloadController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\ProfileViewController;
 
 Route::get('/', function () {
     return view('login');
@@ -15,6 +16,7 @@ Route::get('/', function () {
 Route::get('/registrasi', function () {
     return view('user.registrasiUser');
 });
+Route::get('/profile-view', [ProfileViewController::class, 'showProfile'])->name('profile.show');
 
 // Formulir BBP
 Route::get('/biodata/data-pribadi', function () {

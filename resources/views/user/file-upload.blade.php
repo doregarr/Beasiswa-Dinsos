@@ -3,13 +3,16 @@
 
 <link href="{{ asset('css/index.css') }}" rel="stylesheet">
 <link rel="stylesheet" href="{{ asset('css/components/layouts/file-upload.css') }}">
+<link rel="stylesheet" href="{{ asset('css/components/layouts/user/breadcrumbs.css') }}">
 </head>
 
 @include('components.layouts.user.navbar')
 <main id="main" class="main">
 
     <div class="pagetitle">
-        <h1>Biodata</h1>
+        <h1>Formulir Pendaftran</h1>
+        @include('components.layouts.user.breadcrumbs')
+        </div>
     </div>
 
     <section class="section dashboard">
