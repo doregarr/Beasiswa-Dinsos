@@ -8,6 +8,7 @@
         {{ session('success') }}
     </div>
 @endif
+
 <body>
     @include('components.includes.title')
 

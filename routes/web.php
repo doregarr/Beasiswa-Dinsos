@@ -40,8 +40,9 @@ Route::get('/register', [RegisterController::class, 'showRegister'])->name('regi
 Route::post('/register', [RegisterController::class, 'registration']);
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 
-Route::get('/userPage', [UserController::class, 'showUserPage'])->name('userPage');
+Route::get('/userPage/{id}', [UserController::class, 'showUserPage'])->name('userPage')->middleware('auth');
 
 Route::get('file-upload', [FileController::class, 'create'])->name('file');
 Route::post('file-upload', [FileController::class, 'upload'])->name('file.store');
