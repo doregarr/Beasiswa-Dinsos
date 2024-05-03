@@ -1,3 +1,4 @@
+
 <body>
     <header id="header" class="header fixed-top d-flex align-items-center">
 
@@ -21,7 +22,7 @@
                     <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#"
                         data-bs-toggle="dropdown">
                         <i class="fas fa-user-circle"></i>
-                        <span class="d-none d-md-block ps-2">Priado Siregar</span>
+                        <span class="d-none d-md-block ps-2" >{{ session('name') }}</span>
                     </a>
                 </li>
             </ul>
@@ -54,7 +55,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link " href='/'>
+                <a class="nav-link " href="{{ route('logout') }}">
                     <i class="bi bi-grid"></i>
                     <span>Log-Out</span>
                 </a>
