@@ -12,6 +12,7 @@
 <body>
     @include('components.includes.title')
 
+    <p class="total-pendaftar">Total Pendaftar: / 125</p>
     <div class="card-container">
 
         @include('components.layouts.unduh')

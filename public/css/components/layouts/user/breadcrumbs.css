@@ -1,14 +1,17 @@
 @import "../../include/variable.css";
 
-.breadcrumb {
+  .breadcrumb {
     text-align: center;
     display: inline-block;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.25);
     overflow: hidden;
     border-radius: 5px;
     counter-reset: flag;
-    width: 100%;
+    margin-top: 20px;
   }
+  .breadcrumb a {
+    color: inherit;
+    transition: 0.3s;
+}
   .breadcrumb__step {
     text-decoration: none;
     outline: none;
@@ -19,7 +22,7 @@
     padding: 0 10px 0 60px;
     position: relative;
     background: var(--breadcrumb-theme-2);
-    color: var(--breadcrumb-theme-1);
+    color: var(--breadcrumb-theme-3);
     transition: background 0.5s;
   }
   .breadcrumb__step:first-child {
@@ -66,7 +69,7 @@
     box-shadow: 2px -2px 0 2px var(--breadcrumb-theme-4);
   }
   .breadcrumb__step--active {
-    color: #fff;
+    color: var(--breadcrumb-theme-2);
     background: var(--breadcrumb-theme-1);
   }
   .breadcrumb__step--active::before {

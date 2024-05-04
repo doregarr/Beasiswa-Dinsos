@@ -3,6 +3,9 @@
 .card-container {
     display: flex;
 }
+.total-pendaftar {
+    text-align: center;
+}
 
 .card-container .login-container{
     display: flex;
