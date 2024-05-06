@@ -1,4 +1,8 @@
 :root {
     --primer: #ccf5ff;
-    --secondary: #007cea
+    --secondary: #007cea;
+        --breadcrumb-theme-1: #319fff;
+        --breadcrumb-theme-2: #fff;
+        --breadcrumb-theme-3: #73cff3;
+        --breadcrumb-theme-4: #007cea;
 }

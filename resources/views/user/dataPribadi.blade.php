@@ -3,13 +3,15 @@
 
 <link href="{{ asset('css/index.css') }}" rel="stylesheet">
 <link rel="stylesheet" href="{{ asset('css/components/layouts/biostyle.css') }}">
+<link rel="stylesheet" href="{{ asset('css/components/layouts/user/breadcrumbs.css') }}">
 </head>
 
 @include('components.layouts.user.navbar')
 <main id="main" class="main">
 
     <div class="pagetitle">
-        <h1>Biodata</h1>
+        <h1>Formulir Pendaftran</h1>
+        @include('components.layouts.user.breadcrumbs')
     </div>
 
     <section class="section dashboard">
@@ -120,12 +122,13 @@
                 </div>
                 <button class="btn-submit" type="submit">Submit</button>
             </div>
-            
+
         </form>
 
 
-        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-                class="bi bi-arrow-up-short"></i></a>
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+            <i class="bi bi-arrow-up-short"></i>
+        </a>
 
         <!-- Vendor JS Files -->
         {{-- {{ asset('css/style.css') }} --}}

@@ -1,3 +1,4 @@
+
 <body>
     <header id="header" class="header fixed-top d-flex align-items-center">
 
@@ -21,7 +22,7 @@
                     <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#"
                         data-bs-toggle="dropdown">
                         <i class="fas fa-user-circle"></i>
-                        <span class="d-none d-md-block ps-2">Priado Siregar</span>
+                        <span class="d-none d-md-block ps-2" >{{ session('name') }}</span>
                     </a>
                 </li>
             </ul>
@@ -33,7 +34,7 @@
         <ul class="sidebar-nav" id="sidebar-nav">
 
             <li class="nav-item">
-                <a class="nav-link " href="/biodata">
+                <a class="nav-link " href="/userPage">
                     <i class="bi bi-grid"></i>
                     <span>Dashboard</span>
                 </a>
@@ -47,15 +48,15 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link " href="index1.php">
+                <a class="nav-link " href="{{ route('profile.show') }}">
                     <i class="bi bi-person"></i>
                     <span>My View Profil</span>
                 </a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link " href='/'>
-                    <i class="bi bi-grid"></i>
+                <a class="nav-link " href="{{ route('logout') }}">
+                    <i class="fas fa-sign-out-alt"></i>
                     <span>Log-Out</span>
                 </a>
             </li>

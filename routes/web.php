@@ -8,6 +8,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\DownloadController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\ProfileViewController;
 
 Route::get('/', function () {
     return view('login');
@@ -15,6 +16,7 @@ Route::get('/', function () {
 Route::get('/registrasi', function () {
     return view('user.registrasiUser');
 });
+Route::get('/profile-view', [ProfileViewController::class, 'showProfile'])->name('profile.show');
 
 // Formulir BBP
 Route::get('/biodata/data-pribadi', function () {
@@ -40,11 +42,11 @@ Route::get('/register', [RegisterController::class, 'showRegister'])->name('regi
 Route::post('/register', [RegisterController::class, 'registration']);
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 
-Route::get('/userPage', [UserController::class, 'showUserPage'])->name('userPage');
+Route::get('/userPage/{id}', [UserController::class, 'showUserPage'])->name('userPage')->middleware('auth');
 
-Route::get('file-upload', [FileController::class, 'create'])->name('file');
-Route::post('file-upload', [FileController::class, 'upload'])->name('file.store');
+
 Route::post('/file-upload', [FileController::class, 'uploadBiodata'])->name('biodata.upload');
 
 

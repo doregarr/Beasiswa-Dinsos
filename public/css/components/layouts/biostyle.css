@@ -111,7 +111,8 @@ label {
 input[type="text"],
 input[type="date"],
 select,
-textarea {
+textarea,
+.label-text {
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
@@ -156,3 +157,4 @@ textarea {
     background-color: #fff;
     color: var(--secondary);
 }
+
