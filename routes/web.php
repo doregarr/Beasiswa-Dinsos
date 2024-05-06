@@ -10,9 +10,8 @@ use App\Http\Controllers\DownloadController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\ProfileViewController;
 
-Route::get('/', function () {
-    return view('login');
-});
+Route::get('/', [LoginController::class, 'showLoginForm']);
+
 Route::get('/registrasi', function () {
     return view('user.registrasiUser');
 });
@@ -38,6 +37,7 @@ Route::get('components/layouts/file-upload', [FileController::class, 'create'])-
 Route::post('components/layouts/file-upload', [FileController::class, 'upload'])->name('file.store');
 Route::get('/register', [RegisterController::class, 'showRegister'])->name('register');
 Route::post('/register', [RegisterController::class, 'registration']);
+Route::post('/registerAdmin ', [RegisterController::class, 'registrationAdmin'])->name('registerAdmin');
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
@@ -56,3 +56,7 @@ Route::get('/bbp-diajukan', function () {
     return view('Admin.bbpDiajukan');
 });
 Route::get('/adminPage', [AdminController::class, 'showAdminPage'])->name('adminPage');
+Route::get('/userrecords', [LoginController::class, 'countRecords'])->name('countUser');
+Route::get('/biodata/data-keluarga', [UserController::class, 'getDataKeluarga'])->name('getDataKeluarga');
+Route::post('/storeDataKeluarga', [UserController::class, 'storeDataKeluarga'])->name('storeDataKeluarga');
+Route::post('/biodata/data-pribadi', [UserController::class, 'getDataPribadi'])->name('getDataPribadi');

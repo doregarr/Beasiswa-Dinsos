@@ -15,18 +15,18 @@
                 </div>
             @endif
             <body>
-            
+
                 <div class="card-container">
-            
+
                     <div class="registrasi-container">
                        <div class="box-container">
                         <div class="box-registrasi">
                             <div class="input-container">
                                 <h3 class="registrasi">Registrasi</h3>
-                                <form method="POST" action="{{ route('register') }}">
+                                <form method="POST" action="{{ route('registerAdmin') }}">
                                     @csrf
                                 <div class="input-wrapper">
-            
+
                                     <i for="nik" class="fas fa-id-card placeholder-icon"></i>
                                     <input type="text" id="nik" placeholder="Masukkan Nomor Induk Kependudukan"
                                         class="input-nik" name="nik">
@@ -62,7 +62,7 @@
                             notification.style.display = 'none';
                         }
                     }, 3000); // 5000 milidetik = 3 detik
-            
+
                 </script>
     </section>
     <!-- Vendor JS Files -->

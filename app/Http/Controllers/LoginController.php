@@ -12,7 +12,9 @@ class LoginController extends Controller
 {
     // Menampilkan form login
     public function showLoginForm()
-    {
+    {$count = User::where('role', 'user')->count();
+        Session::put('count', $count);
+
         return view('login'); // Mengembalikan view untuk halaman login (misalnya login.blade.php)
     }
 
@@ -34,16 +36,18 @@ class LoginController extends Controller
                 $user = User::where('nik', $request->nik)->first();
 $id=$user->id;
 $e_id= Crypt::encrypt($id);
+$count = User::where('role', 'user')->count();
                 Session::put('nik', $user->nik);
                 Session::put('name', $user->name);
-
+                Session::put('count', $count);
                 return redirect()->route('userPage', ['id' => $e_id]);
             } else  if (auth()->user()->role === 'admin') {
                 return redirect()->route('adminPage');
             }
         } else {
+
             // Jika kredensial tidak valid, tambahkan pesan kesalahan dan kembali ke halaman login
-            return back()->withErrors(['nik' => 'Invalid NIK or password']);
+           return redirect()->route('login')->with('failed', 'NIK Atau Password Salah');
         }
     }
     public function logout(Request $request)
@@ -54,4 +58,10 @@ $e_id= Crypt::encrypt($id);
         // Redirect ke halaman login atau halaman lain yang sesuai
         return redirect('/')->with('success', 'Anda telah berhasil keluar.');
     }
+    public function countUser()
+    {
+        $count = User::where('role', 'user')->count();
+        Session::put('count', $count);
+        return redirect()->route('login');
+}
 }

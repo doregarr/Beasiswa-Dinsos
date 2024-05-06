@@ -8,11 +8,16 @@
         {{ session('success') }}
     </div>
 @endif
+@if (session('failed'))
+    <div id="notification-failed" class=" alert-danger">
+        {{ session('failed') }}
+    </div>
+@endif
 
 <body>
     @include('components.includes.title')
 
-    <p class="total-pendaftar">Total Pendaftar: / 125</p>
+    <p class="total-pendaftar">Total Pendaftar : {{ session('count') }} / 125</p>
     <div class="card-container">
 
         @include('components.layouts.unduh')
@@ -52,6 +57,18 @@
                 notification.style.display = 'none';
             }
         }, 3000); // 5000 milidetik = 3 detik
+
+
+    </script>
+    <script>
+        // Menyembunyikan notifikasi setelah 5 detik
+        setTimeout(function(){
+            var notification = document.getElementById('notification-failed');
+            if(notification) {
+                notification.style.display = 'none';
+            }
+        }, 3000); // 5000 milidetik = 3 detik
+
 
     </script>
 </body>
