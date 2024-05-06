@@ -52,6 +52,7 @@
         }, 3000); // 5000 milidetik = 3 detik
 
     </script>
-</body>
 
+</body>
+      @include('components.layouts.footer')
 </html>

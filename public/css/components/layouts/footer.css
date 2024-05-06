@@ -1,0 +1,56 @@
+.footer {
+    background-color: #ccf5ff;
+    padding: 20px 0;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.garis {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: none;
+    border-top: 1px solid #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+
+}
+
+.sosial-media ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sosial-media ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.sosial-media ul li:last-child {
+    margin-right: 0;
+}
+
+.alamat {
+    text-align: center; /* Tengahkan teks alamat */
+}
+
+.fa {
+    font-size: 24px;
+    color: #fff;
+}
+.ikon {
+    text-align: center;
+    font-size: 30px; /* Sesuaikan ukuran ikon Instagram jika diperlukan */
+}
+
+

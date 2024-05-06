@@ -63,5 +63,6 @@
 
     </script>
 </body>
+@include('components.layouts.footer')
 
 </html>
