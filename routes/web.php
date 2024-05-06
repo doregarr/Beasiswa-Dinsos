@@ -44,8 +44,7 @@ Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 
 Route::get('/userPage/{id}', [UserController::class, 'showUserPage'])->name('userPage')->middleware('auth');
 
-Route::get('file-upload', [FileController::class, 'create'])->name('file');
-Route::post('file-upload', [FileController::class, 'upload'])->name('file.store');
+
 Route::post('/file-upload', [FileController::class, 'uploadBiodata'])->name('biodata.upload');
 
 

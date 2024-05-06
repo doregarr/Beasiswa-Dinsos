@@ -21,7 +21,6 @@ return new class extends Migration
             $table->string('ktm')->nullable();
             $table->string('surat_aktif_kuliah')->nullable();
             $table->string('dtks')->nullable();
-            $table->string('permohonan_dinsos')->nullable();
             $table->string('surat_beasiswa')->nullable();
             $table->string('surat_orangtua/wali')->nullable();
             $table->string('transkrip_nilai')->nullable();

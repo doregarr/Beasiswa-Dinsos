@@ -61,7 +61,7 @@
                             <label for="ktp" class="form-label">Kartu Tanda Penduduk</label>
                             <input type="file" class="form-control @error('ktp') is-invalid @enderror" id="ktp"
                                 name="ktp">
-                            @error('file4')
+                            @error('ktp')
                                 <div class="invalid-feedback">{{ $message }}</div>
                             @enderror
                         </div>
@@ -79,7 +79,7 @@
                                 Permohonan</label>
                             <input type="file" class="form-control @error('surat_aktif_kuliah') is-invalid @enderror"
                                 id="surat_aktif_kuliah" name="surat_aktif_kuliah">
-                            @error('file6')
+                            @error('surat_aktif_kuliah')
                                 <div class="invalid-feedback">{{ $message }}</div>
                             @enderror
                         </div>
@@ -93,22 +93,12 @@
                             @enderror
                         </div>
                         <div class="upload-file">
-                            <label for="permohonan_dinsos" class="form-label">Surat Asli Permohonan Kepada
-                                Dinas
-                                Sosial Kota Medan</label>
-                            <input type="file" class="form-control @error('permohonan_dinsos') is-invalid @enderror"
-                                id="permohonan_dinsos" name="permohonan_dinsos">
-                            @error('permohonan_dinsos')
-                                <div class="invalid-feedback">{{ $message }}</div>
-                            @enderror
-                        </div>
-                        <div class="upload-file">
                             <label for="surat_beasiswa" class="form-label">Surat Pernyataan Tidak Sedang
                                 Menerima
                                 Beasiswa</label>
                             <input type="file" class="form-control @error('surat_beasiswa') is-invalid @enderror"
                                 id="surat_beasiswa" name="surat_beasiswa">
-                            @error('file9')
+                            @error('surat_beasiswa')
                                 <div class="invalid-feedback">{{ $message }}</div>
                             @enderror
                         </div>

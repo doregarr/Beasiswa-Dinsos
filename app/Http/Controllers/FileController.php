@@ -30,7 +30,6 @@ class FileController extends Controller
             'ktm' => 'required|mimes:pdf,csv,xls,xlsx,doc,docx|max:2048',
             'surat_aktif_kuliah' => 'required|mimes:pdf,csv,xls,xlsx,doc,docx|max:2048',
             'dtks' => 'required|mimes:pdf,csv,xls,xlsx,doc,docx|max:2048',
-            'permohonan_dinsos' => 'required|mimes:pdf,csv,xls,xlsx,doc,docx|max:2048',
             'surat_beasiswa' => 'required|mimes:pdf,csv,xls,xlsx,doc,docx|max:2048',
             'surat_orangtua/wali' => 'required|mimes:pdf,csv,xls,xlsx,doc,docx|max:2048',
             'transkrip_nilai' => 'required|mimes:pdf,csv,xls,xlsx,doc,docx|max:2048',
