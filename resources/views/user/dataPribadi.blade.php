@@ -61,6 +61,19 @@
 
                             </div>
 
+                            
+                            <div class="form-group">
+                                <label for="agama">Agama:</label>
+                                <select id="agama" name="agama">
+                                    <option value="islam">Islam</option>
+                                    <option value="Kristen">Kristen</option>
+                                    <option value="Hindu">Hindu</option>
+                                    <option value="Buddha">Buddha</option>
+                                    <option value="Khonghucu">Khonghucu</option>
+
+                                </select>
+                            </div>
+
                             <div class="form-group">
                                 <label for="agama">Agama:</label>
                                 <input type="text" id="agama" name="agama" size="30">
